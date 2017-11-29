@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
             #array.push(specificStat[0])
             hash[name] = {data.keys[i] => [stats[1].keys[i]]}
           elsif hash.keys.include?(name)
-            hash.values[i].values << stats[1].keys[i]
+            hash[name].values << stats[1].keys[i]
         end
       end
     end
