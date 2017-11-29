@@ -15,6 +15,7 @@ def nyc_pigeon_organizer(data)
          hash[name] = {array.push(specificStat[0])}
        else
          array.push(specificStat[0])
+       end 
       end
     end
   end
