@@ -4,12 +4,12 @@ def nyc_pigeon_organizer(data)
   hash = Hash.new
   data.each_with_index do |stats, i|
     #binding.pry
-    stats[1].each do |specificStat|
+    stats[1].each_with_index do |specificStat, j|
       #binding.pry
       specificStat[1].each do |name|
        binding.pry
        if name in hash
-         hash[name] = {data.keys[i]}
+         hash[name] = {data.keys[i] => }
       end
     end
   end
