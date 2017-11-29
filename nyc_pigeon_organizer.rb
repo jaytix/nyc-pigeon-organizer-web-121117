@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       specificStat[1].each do |name|
        binding.pry
-         hash[name] = {data.keys[i] => oneStat}
+         hash[name] = {data.keys[i] => specificStat[0]}
       end
     end
   end
