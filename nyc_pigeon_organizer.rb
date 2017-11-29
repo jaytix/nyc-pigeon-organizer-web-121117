@@ -2,7 +2,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   hash = Hash.new
-  array = []
+  #array = []
   data.each_with_index do |stats, i|
     #binding.pry
     stats[1].each do |specificStat|
@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
             #array.push(specificStat[0])
             hash[name] = {data.keys[i] => [stats[1].keys[i]]}
           elsif hash.keys.include?(name)
-            array.push(stats[i])
+            hash[name].values << stats[1].keys[i]
         end
       end
     end
