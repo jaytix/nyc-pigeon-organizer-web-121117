@@ -2,12 +2,14 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   hash = Hash.new
-  data.each do |stats|
+  data.each_with_index do |stats, i|
     #binding.pry
     stats[1].each do |specificStat|
       #binding.pry
       specificStat[1].each do |name|
        binding.pry
+       if name in hash
+         hash[name] = {data.keys[i]}
       end
     end
   end
