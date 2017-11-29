@@ -9,15 +9,15 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       specificStat[1].each do |name|
        binding.pry
-       hash.keys.each do |hashKey|
-       if name != hash.keys
-         hash[name] = {data.keys[i] => [specificStat[0]]}
-       elsif name == hash.keys
-         array.push(specificStat[0])
-       else
-         array.push(specificStat[0])
-       end
-     end
+        hash.keys.each do |hashKey|
+          if name != hash.keys
+            hash[name] = {data.keys[i] => [specificStat[0]]}
+          elsif name == hash.keys
+            array.push(specificStat[0])
+          else
+            array.push(specificStat[0])
+          end
+        end
       end
     end
   end
