@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       specificStat[1].each do |name|
        binding.pry
+       hash.keys.each do |hashKey|
        if name != hash.keys
          hash[name] = {data.keys[i] => [specificStat[0]]}
        elsif name == hash.keys
