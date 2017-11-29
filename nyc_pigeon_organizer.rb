@@ -9,9 +9,8 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       specificStat[1].each do |name|
        #binding.pry
-        hash.keys.each do |hashKey|
           binding.pry
-          if name != hashkey
+          if name != 
             hash[name] = {data.keys[i] => [specificStat[0]]}
           elsif name == hashKey
             array.push(specificStat[0])
@@ -22,23 +21,3 @@ def nyc_pigeon_organizer(data)
   end
   puts hash
 end
-
-
-# def reformat_languages(languages_by_style)
-#   hash = Hash.new
-#   languages_by_style.each do |styles|
-#     styles.each_with_index do |style, i|
-#       styles[1].each do |language, types|
-#         hash[language] = {}
-#           types.each do |type, value|
-#           hash[language] = {type => value}
-#           hash[language][:style] = [styles[0]]
-#           if language == :javascript
-#             hash[language][:style] = languages_by_style.keys
-#           end
-#         end
-#       end
-#     end
-#   end
-#   return hash
-# end
