@@ -8,8 +8,7 @@ def nyc_pigeon_organizer(data)
       #binding.pry
       specificStat[1].each do |name|
        binding.pry
-       if name in hash
-         hash[name] = {data.keys[i] => }
+         hash[name] = {data.keys[i] => oneStat}
       end
     end
   end
