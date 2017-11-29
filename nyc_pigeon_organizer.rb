@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
        if name != hash.keys
          hash[name] = {data.keys[i] => [specificStat[0]]}
        elsif name == hash.keys
-         hash[name] = {data.keys[i] => array.push(specificStat[0])}
+         array.push(specificStat[0])
        else
          array.push(specificStat[0])
        end
