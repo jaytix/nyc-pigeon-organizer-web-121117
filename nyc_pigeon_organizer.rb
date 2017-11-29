@@ -11,9 +11,10 @@ def nyc_pigeon_organizer(data)
        #binding.pry
           binding.pry
           if !hash.keys.include?(name)
-            hash[name] = {data.keys[i] => [specificStat[0]]}
+            array.push(specificStat[0])
+            hash[name] = {data.keys[i] => array}
           else
-            hash[name] = {data.keys[i] => [] << [specificStat[0]]}
+            array.push(specificStat[0])
         end
       end
     end
