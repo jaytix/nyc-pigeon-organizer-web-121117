@@ -5,9 +5,9 @@ def nyc_pigeon_organizer(data)
   data.each_with_index do |stats, i|
     #binding.pry
     stats[1].each do |specificStat, oneStat|
-      #binding.pry
+      binding.pry
       specificStat[1].each do |name|
-       binding.pry
+       #binding.pry
          hash[name] = {data.keys[i] => oneStat}
       end
     end
