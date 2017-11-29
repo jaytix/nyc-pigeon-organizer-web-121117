@@ -14,8 +14,6 @@ def nyc_pigeon_organizer(data)
             hash[name] = {data.keys[i] => [specificStat[0]]}
           else
             hash[name] = {data.keys[i] => [specificStat[0]] << [specificStat[0]]}
-            end
-          end
         end
       end
     end
