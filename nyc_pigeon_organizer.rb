@@ -16,7 +16,6 @@ def nyc_pigeon_organizer(data)
        else
          array.push(specificStat[0])
        end
-       end
       end
     end
   end
