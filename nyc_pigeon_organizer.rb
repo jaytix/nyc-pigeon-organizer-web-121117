@@ -15,7 +15,6 @@ def nyc_pigeon_organizer(data)
           elsif hash.keys.include?(name)
             binding.pry
             hash[name].values << [stats[1].keys[j]]
-          end  
         end
       end
     end
@@ -27,5 +26,5 @@ end
 #   data.each_with_obj(Hash.new { |a, b| a[b] = data })
 #     binding.pry
 #   end
-# 
+#
 # end
